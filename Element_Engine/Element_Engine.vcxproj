@@ -59,7 +59,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>ELM_PLATFORM_WINDOWS;ELM_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions) ELM_PLATFORM_WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Element_Engine\vendor\spdlog\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Element_Engine\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -74,7 +74,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>ELM_PLATFORM_WINDOWS;ELM_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions) ELM_PLATFORM_WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Element_Engine\vendor\spdlog\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Element_Engine\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
