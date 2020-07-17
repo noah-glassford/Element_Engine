@@ -1,4 +1,6 @@
 #include "Application.h"
+#include <Event\ApplicationEvent.h>
+#include <Element\Log.h>
 
 namespace ELM
 {
@@ -14,6 +16,9 @@ namespace ELM
 
 	void Application::Run()
 	{
+		WindowResizeEvent e(1280, 720);
+		ELM_TRACE(e);
+		
 		while (true);
 	}
 }

@@ -26,6 +26,7 @@ project "Element_Engine"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"Element_Engine/vendor/spdlog/include"
 	}
 
