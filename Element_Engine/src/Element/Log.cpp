@@ -1,3 +1,4 @@
+#include "elmpch.h"
 #include "Log.h"
 
 namespace ELM

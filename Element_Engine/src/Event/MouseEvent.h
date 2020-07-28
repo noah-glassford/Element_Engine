@@ -2,7 +2,7 @@
 
 #include "Event.h"
 
-#include <sstream>
+
 
 namespace ELM {
 	class ELM_API MouseMovedEvent : public Event

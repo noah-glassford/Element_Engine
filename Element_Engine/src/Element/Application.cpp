@@ -1,12 +1,14 @@
+#include "elmpch.h"
 #include "Application.h"
-#include <Event\ApplicationEvent.h>
+#include "Event/Event.h"
 #include <Element\Log.h>
+#include <Event\ApplicationEvent.h>
 
 namespace ELM
 {
 	Application::Application()
 	{
-
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -16,9 +18,11 @@ namespace ELM
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		ELM_TRACE(e);
 		
-		while (true);
+		
+		while (m_Running)
+		{
+			m_Window->OnUpdate();
+		}
 	}
 }

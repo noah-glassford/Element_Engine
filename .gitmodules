@@ -1,0 +1,3 @@
+[submodule "vendor/GLFW"]
+	path = Element_Engine/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

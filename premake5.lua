@@ -10,6 +10,12 @@ workspace "Element_Engine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Element_Engine/vendor/GLFW/include"
+
+include "Element_Engine/vendor/GLFW"
+
 project "Element_Engine"
 	location "Element_Engine"
 	kind "SharedLib"
@@ -17,6 +23,9 @@ project "Element_Engine"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "elmpch.h"
+	pchsource "Element_Engine/src/elmpch.cpp"
 
 	files
 	{
@@ -27,13 +36,20 @@ project "Element_Engine"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"Element_Engine/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links 
+	{ 
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.18362.0"
+		systemversion "latest"
 
 		defines
 		{
@@ -86,7 +102,7 @@ project "Sandbox"
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.18362.0"
+		systemversion "latest"
 
 		defines
 		{
@@ -103,4 +119,4 @@ project "Sandbox"
 
 	filter "configurations:Dist"
 		defines "ELM_DIST"
-		optimize "On" 
+		optimize "On"

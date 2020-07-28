@@ -34,6 +34,11 @@
     <ClInclude Include="src\Event\MouseEvent.h">
       <Filter>Element\Event</Filter>
     </ClInclude>
+    <ClInclude Include="src\elmpch.h" />
+    <ClInclude Include="Window.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Element\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Element\Application.cpp">
@@ -42,5 +47,7 @@
     <ClCompile Include="src\Element\Log.cpp">
       <Filter>Element</Filter>
     </ClCompile>
+    <ClCompile Include="src\elmpch.cpp" />
+    <ClCompile Include="src\Element\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

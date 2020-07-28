@@ -2,8 +2,6 @@
 
 #include "Element/Core.h"
 
-#include <string>
-#include <functional>
 
 namespace ELM
 {
