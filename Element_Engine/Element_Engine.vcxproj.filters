@@ -35,10 +35,8 @@
       <Filter>Element\Event</Filter>
     </ClInclude>
     <ClInclude Include="src\elmpch.h" />
-    <ClInclude Include="Window.h">
-      <Filter>Element</Filter>
-    </ClInclude>
     <ClInclude Include="src\Element\WindowsWindow.h" />
+    <ClInclude Include="src\Element\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Element\Application.cpp">

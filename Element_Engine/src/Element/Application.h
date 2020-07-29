@@ -3,6 +3,7 @@
 #include "Core.h"
 #include "Event/Event.h"
 #include "Window.h"
+#include <Event\ApplicationEvent.h>
 
 namespace ELM
 {
@@ -14,7 +15,11 @@ namespace ELM
 		virtual ~Application();
 
 		void Run();
+
+		void OnEvent(Event& e);
 	private:
+		bool OnWindowClose(WindowCloseEvent& e);
+
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = 1;
 	

@@ -154,13 +154,13 @@
     <ClInclude Include="src\Element\Core.h" />
     <ClInclude Include="src\Element\EntryPoint.h" />
     <ClInclude Include="src\Element\Log.h" />
+    <ClInclude Include="src\Element\Window.h" />
     <ClInclude Include="src\Element\WindowsWindow.h" />
     <ClInclude Include="src\Event\ApplicationEvent.h" />
     <ClInclude Include="src\Event\Event.h" />
     <ClInclude Include="src\Event\KeyEvent.h" />
     <ClInclude Include="src\Event\MouseEvent.h" />
     <ClInclude Include="src\elmpch.h" />
-    <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Element\Application.cpp" />

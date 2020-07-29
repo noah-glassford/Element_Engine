@@ -41,10 +41,10 @@ namespace ELM
 		int m_RepeatCount;
 	};
 
-	class ELM_API KeyPressedEvent : public KeyEvent
+	class ELM_API KeyReleasedEvent : public KeyEvent
 	{
 	public:
-		KeyPressedEvent(int keycode, int repeatCount)
+		KeyReleasedEvent(int keycode)
 			: KeyEvent(keycode) {}
 
 
