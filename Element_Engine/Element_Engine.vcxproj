@@ -84,6 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -109,6 +110,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -135,6 +137,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -153,6 +156,8 @@
     <ClInclude Include="src\Element\Application.h" />
     <ClInclude Include="src\Element\Core.h" />
     <ClInclude Include="src\Element\EntryPoint.h" />
+    <ClInclude Include="src\Element\Layer.h" />
+    <ClInclude Include="src\Element\LayerStack.h" />
     <ClInclude Include="src\Element\Log.h" />
     <ClInclude Include="src\Element\Window.h" />
     <ClInclude Include="src\Element\WindowsWindow.h" />
@@ -164,6 +169,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Element\Application.cpp" />
+    <ClCompile Include="src\Element\Layer.cpp" />
+    <ClCompile Include="src\Element\LayerStack.cpp" />
     <ClCompile Include="src\Element\Log.cpp" />
     <ClCompile Include="src\Element\WindowsWindow.cpp" />
     <ClCompile Include="src\elmpch.cpp">

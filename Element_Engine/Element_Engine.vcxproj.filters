@@ -4,7 +4,7 @@
     <Filter Include="Element">
       <UniqueIdentifier>{CF4D80C6-3B2D-FF61-4445-8A38B0A365C3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Element\Event">
+    <Filter Include="Event">
       <UniqueIdentifier>{E70B220D-5320-4ABE-1CA2-ED1D887546EF}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -19,33 +19,51 @@
     <ClInclude Include="src\Element\EntryPoint.h">
       <Filter>Element</Filter>
     </ClInclude>
+    <ClInclude Include="src\Element\Layer.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Element\LayerStack.h">
+      <Filter>Element</Filter>
+    </ClInclude>
     <ClInclude Include="src\Element\Log.h">
       <Filter>Element</Filter>
     </ClInclude>
+    <ClInclude Include="src\Element\Window.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Element\WindowsWindow.h">
+      <Filter>Element</Filter>
+    </ClInclude>
     <ClInclude Include="src\Event\ApplicationEvent.h">
-      <Filter>Element\Event</Filter>
+      <Filter>Event</Filter>
     </ClInclude>
     <ClInclude Include="src\Event\Event.h">
-      <Filter>Element\Event</Filter>
+      <Filter>Event</Filter>
     </ClInclude>
     <ClInclude Include="src\Event\KeyEvent.h">
-      <Filter>Element\Event</Filter>
+      <Filter>Event</Filter>
     </ClInclude>
     <ClInclude Include="src\Event\MouseEvent.h">
-      <Filter>Element\Event</Filter>
+      <Filter>Event</Filter>
     </ClInclude>
     <ClInclude Include="src\elmpch.h" />
-    <ClInclude Include="src\Element\WindowsWindow.h" />
-    <ClInclude Include="src\Element\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Element\Application.cpp">
       <Filter>Element</Filter>
     </ClCompile>
+    <ClCompile Include="src\Element\Layer.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Element\LayerStack.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
     <ClCompile Include="src\Element\Log.cpp">
       <Filter>Element</Filter>
     </ClCompile>
+    <ClCompile Include="src\Element\WindowsWindow.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
     <ClCompile Include="src\elmpch.cpp" />
-    <ClCompile Include="src\Element\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

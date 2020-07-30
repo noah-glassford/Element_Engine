@@ -1,6 +1,5 @@
 #pragma once
-
-#include "elmpch.h";
+#include "elmpch.h"
 
 #include "Element/Core.h"
 #include "Event/Event.h"
