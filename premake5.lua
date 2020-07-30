@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Element_Engine/vendor/GLFW/include"
+IncludeDir["Glad"] = "Element_Engine/vendor/Glad/include"
 
 include "Element_Engine/vendor/GLFW"
+include "Element_Engine/vendor/Glad"
 
 project "Element_Engine"
 	location "Element_Engine"
@@ -37,12 +39,14 @@ project "Element_Engine"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links 
 	{ 
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -54,7 +58,8 @@ project "Element_Engine"
 		defines
 		{
 			"ELM_PLATFORM_WINDOWS",
-			"ELM_BUILD_DLL"
+			"ELM_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands

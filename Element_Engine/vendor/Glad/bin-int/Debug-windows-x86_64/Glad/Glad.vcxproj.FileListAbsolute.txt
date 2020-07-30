@@ -1,0 +1,2 @@
+C:\Code\Element_Engine\Element_Engine\vendor\Glad\bin\Debug-windows-x86_64\Glad\Glad.pdb
+C:\Code\Element_Engine\Element_Engine\vendor\Glad\bin-int\Debug-windows-x86_64\Glad\Glad.pdb
